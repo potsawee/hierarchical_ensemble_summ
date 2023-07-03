@@ -1,5 +1,5 @@
 # Hierarchical Ensemble of Summarization Models
-This repository contains the code for "[CUED at ProbSum 2023: Hierarchical Ensemble of Summarization Models](https://arxiv.org/abs/2306.05317)" (to be appear at BioNLP Workshop @ ACL 2023).
+This repository contains the code for "[CUED at ProbSum 2023: Hierarchical Ensemble of Summarization Models](https://arxiv.org/abs/2306.05317)" (to appear at BioNLP Workshop @ ACL 2023).
 
 ## Token-level Ensemble
 - This code combines the token-level probabilities (i.e., the output of the softmax layer) of multiple models.
