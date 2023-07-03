@@ -1,0 +1,2 @@
+pytorch=1.11.0
+transformers=transformers=4.23.0
