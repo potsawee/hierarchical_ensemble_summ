@@ -1,9 +1,9 @@
 # Hierarchical Ensemble of Summarization Models
-This repository contains the code for "[CUED at ProbSum 2023: Hierarchical Ensemble of Summarization Models](https://arxiv.org/abs/2306.05317)" (to appear at BioNLP Workshop @ ACL 2023).
+This repository contains the code for "[CUED at ProbSum 2023: Hierarchical Ensemble of Summarization Models](https://aclanthology.org/2023.bionlp-1.51/)" at the BioNLP Workshop @ ACL 2023.
 
 ## Token-level Ensemble
 - This code combines the token-level probabilities (i.e., the output of the softmax layer) of multiple models.
-- Currently, this only supports beamsearch decoding, as we modifiy `ensemble_beam_search` in the huggingface generation code. The code is in `ensemble_utils.py`
+- Currently, this only supports beamsearch decoding, as we modify `ensemble_beam_search` in the huggingface generation code. The code is in `ensemble_utils.py`
 
 Example usage (see more details in [```examples_token_level_ensemble.ipynb```](examples_token_level_ensemble.ipynb)):
 
@@ -27,7 +27,7 @@ ensemble = [
 # inference call -- similar to model.generate() in the huggingface library
 # all the arguments in model.generate() can be used there
 # the input to each model can be different, so we define the input separately
-# the input is input_ids which is created using standard tokenization process
+# the input is input_ids which is created using the standard tokenization process
 output_ids = ensemble_generate(
         ensemble,
         [inputs1.input_ids, inputs2.input_ids, inputs3.input_ids],
@@ -50,7 +50,7 @@ Example code in `mbr_decoding.py`
 python mbr_decoding.py --filedir directory --outfile output.txt
 ```
 
-In this example code, the directory should contain the output files (to be combined) where in each file, it has one summary a line.
+In this example code, the directory should contain the output files (to be combined) where each file has one summary per line.
 
 
 ## Citation
