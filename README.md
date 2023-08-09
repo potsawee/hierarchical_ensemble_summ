@@ -55,10 +55,21 @@ In this example code, the directory should contain the output files (to be combi
 
 ## Citation
 ```
-@article{manakul2023cued,
-  title={CUED at ProbSum 2023: Hierarchical Ensemble of Summarization Models},
-  author={Manakul, Potsawee and Fathullah, Yassir and Liusie, Adian and Raina, Vyas and Raina, Vatsal and Gales, Mark},
-  journal={arXiv preprint arXiv:2306.05317},
-  year={2023}
+@inproceedings{manakul-etal-2023-cued,
+    title = "{CUED} at {P}rob{S}um 2023: Hierarchical Ensemble of Summarization Models",
+    author = "Manakul, Potsawee  and
+      Fathullah, Yassir  and
+      Liusie, Adian  and
+      Raina, Vyas  and
+      Raina, Vatsal  and
+      Gales, Mark",
+    booktitle = "The 22nd Workshop on Biomedical Natural Language Processing and BioNLP Shared Tasks",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.bionlp-1.51",
+    doi = "10.18653/v1/2023.bionlp-1.51",
+    pages = "516--523",
 }
 ```
